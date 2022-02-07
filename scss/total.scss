@@ -1,0 +1,87 @@
+@charset "UTF-8";
+@import "../css/reset_css.css";
+@import "quick_event";
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+};
+
+#fullpage {
+  position:relative;
+  top: 0px;
+  z-index: 9;
+  width: 100%;
+  height: 100%;
+  span {
+    display: block;
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font: {
+      size: 4em;
+      weight:bold;
+    };
+  };
+};
+
+.fullsection {
+  width: 100%;
+  height: 100%;
+  position:relative;
+};
+
+.info_main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.img_page {
+  width: 50%;
+  height: 60%;
+  background:#fff;
+  border-radius: 20px;
+  position: absolute;
+  top:20%;
+  left: 10%;
+  box-shadow: 4px 4px 4px rgba(0,0,0,0.1);
+}
+
+.info_sub {
+  width: 24.5%;
+  height: 100%;
+  float: right;
+  background: #fff;
+  position: absolute;
+  top:0;
+  right:7%;
+
+}
+
+.BS_info .info_main {
+  background: #e8dcca;
+  
+}
+
+.FF14_info .info_main {
+  background: #ece6cc;
+}
+
+.Higashino_info .info_main {
+  background: #dcd5cd;
+}
+
+.CHANEL_info .info_main {
+  background: #444;
+}
+
+.team_info .info_main {
+  background:#eee;
+}
+
+.contact {
+  background:#a9cbd7
+}
