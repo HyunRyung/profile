@@ -26,6 +26,11 @@ ul, li {
   background: #ddd;
 }
 
+@font-face {
+  src: url(../fonts/PowerPixel7-Jy0E.ttf);
+  font-family: "dot";
+}
+
 html, body {
   width: 100%;
   height: 100%;
@@ -38,17 +43,6 @@ html, body {
   z-index: 9;
   width: 100%;
   height: 100%;
-}
-
-#fullpage span {
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  font-size: 4em;
-  font-weight: bold;
 }
 
 .fullsection {
@@ -83,6 +77,66 @@ html, body {
   position: absolute;
   top: 0;
   right: 7%;
+}
+
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #000;
+}
+
+.title_text {
+  display: none;
+}
+
+.title_blink {
+  display: inline-block;
+  font-size: 4em;
+  text-align: center;
+  width: 1200px;
+  height: auto;
+  color: #fff;
+  font-family: "dot";
+}
+
+.title_blink span {
+  -webkit-animation-name: cursor;
+          animation-name: cursor;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes cursor {
+  0% {
+    border-right: 1px solid #fff;
+  }
+  50% {
+    border-right: 1px solid #000;
+  }
+  100% {
+    border-right: 1px solid #fff;
+  }
+}
+
+@keyframes cursor {
+  0% {
+    border-right: 1px solid #fff;
+  }
+  50% {
+    border-right: 1px solid #000;
+  }
+  100% {
+    border-right: 1px solid #fff;
+  }
 }
 
 .BS_info .info_main {

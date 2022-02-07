@@ -1,6 +1,10 @@
 @charset "UTF-8";
 @import "../css/reset_css.css";
 @import "quick_event";
+@font-face {
+  src: url(../fonts/PowerPixel7-Jy0E.ttf);
+  font-family: "dot";
+}
 
 html, body {
   width: 100%;
@@ -14,17 +18,7 @@ html, body {
   z-index: 9;
   width: 100%;
   height: 100%;
-  span {
-    display: block;
-    position:absolute;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    font: {
-      size: 4em;
-      weight:bold;
-    };
-  };
+
 };
 
 .fullsection {
@@ -59,6 +53,42 @@ html, body {
   top:0;
   right:7%;
 
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+}
+
+.title_text{
+  display: none;
+}
+
+
+
+.title_blink {
+  display: inline-block; 
+  font: {
+    size: 4em;
+  }
+  text-align: center;
+  width: 1200px;
+  height: auto;
+  color:#fff;
+  font-family: "dot";
+}
+
+.title_blink span{
+  animation-name: cursor; 
+  animation-duration: 1s; 
+  animation-iteration-count: infinite; 
+}
+
+@keyframes cursor{ 
+  0%{border-right: 1px solid #fff} 
+  50%{border-right: 1px solid #000} 
+  100%{border-right: 1px solid #fff} 
 }
 
 .BS_info .info_main {
