@@ -6,6 +6,8 @@
   font-family: "dot";
 }
 
+*{font-family: "함초롬돋움";}
+
 html, body {
   width: 100vw;
   height: 100vh;
@@ -103,54 +105,205 @@ html, body {
 
 .info_sub {
   width: 450px;
-  height: 100%;
+  height: 90%;
   float: right;
   background: #fff;
   position: absolute;
-  top:0;
+  top:0%;
   right:7%;
+  .band {
+    width: 30px;
+    height: 90px;
+    position: absolute;
+    left: 12%;
+  }
+  .title_area{
+    position: absolute;
+    top:8%;
+    left:12%;
+  }
+  h1 {
+    font : { 
+      size:40px;
+    }
+  }
+  h3 {
+    font : {
+      size:30px
+    }
+  }
+  h4 {
+    color:#aaa;
+    font : {
+      size: 20px;
+    }
+  }
 
+  .button_area {
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top: 40%;
+    left: 12%;
+      a {
+        text-decoration: none;
+        color:#fff;
+        &:link {
+          color:#fff;
+        }
+        &:visited {
+          color:#fff;
+        }
+        &:active {
+          color:#fff;
+        }
+      } 
+      .main_button, .sub_button {
+        box-sizing: border-box;
+        width:83px;
+        height: 30px;
+        background: #000;
+        border-radius: 500px;
+        text-align: center;
+        border: 4px solid transparent;
+
+        font : {
+          size: 18px;
+          weight:bold;
+        }
+        margin: {
+          left: 5px;
+          right: 5px;
+        } 
+        &:hover {
+          border:4px solid #000;
+          background: #fff;
+          a {
+            &:link {
+              color:#000;
+            }
+            &:visited {
+              color:#000;
+            }
+            &:active {
+              color:#000;
+            }
+          }
+        }
+      }
+      .main_button {
+        float:left;
+      }
+      .sub_button {
+        float:right;
+      }
+    }
+    .text_area {
+      line-height: 30px;
+      font-size:14px;
+      position:absolute;
+      top:50%;
+      left:12%;
+      color: #666;
+      b {
+        color:#aaa;
+      }
+    }
 }
 
-.screen_img {
-  height: calc(100% * 4);
-  animation: screen_slide_FF14 8s infinite;
-  padding: 0;
+.FF14_info {
+  .info_main {
+    background: #ece6cc;
+  }
+  .screen_img {
+    height: 2243px;
+    padding: 0;
+    overflow: hidden;
   li {
-    height: calc(100% / 4);
-    &:nth-child(1) {
-      background: none;
-    }
-    &:nth-child(2) {
-      background: none;
-
-    }
-    &:nth-child(3) {
-      background: none;
-      margin-top: 50px;
-    }
-    &:nth-child(4) {
-      background: none;
-      margin-top: 30px;
-    }
-  }
+      height:100%
+      }
   img {
-    width: 100%;
-    height: 100%;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .info_sub {
+    h1 {
+      color:#367df3;
+
+    }
+    .band {
+      border-left: 5px solid #367df3;
+      }
+    }
+  }
+
+
+.Higashino_info {
+  .M_img {
+    border: #888 solid 1px;
+    }
+  .screen_img {
+    height: 2212px;
+    padding: 0;
+    overflow: hidden;
+    li {
+      height: 100%;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .info_sub {
+    h1 {
+      color:#aaa;
+
+    }
+    .band {
+      border-left: 5px solid #aaa;
+      }
+    }
+}
+
+.CHANEL_info {
+  .screen_img {
+    height: 2730px;
+    padding: 0;
+    overflow: hidden;
+    li {
+      height: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .info_sub {
+    h1 {
+      color:maroon;
+    }
+    .band {
+      border-left: 5px solid maroon;
+      }
+    }
+}
+
+.team_info {
+  .screen_img {
+    height: 2403px;
+    padding: 0;
+    overflow: hidden;
+    li {
+      height: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
   }
 }
 
-@keyframes screen_slide_FF14 {
-  0% {margin-top:0;}
-  10% {margin-top:0;}
-  25% {margin-top:-600px;}
-  35% {margin-top:-600px;}
-  50% {margin-top:-1250px;}
-  60% {margin-top:-1250px;}
-  75% {margin-top:-1860px;}
-  85% {margin-top:-1860px;}
-  100% {margin-top:0;}
-}
 
 .title {
   display: flex;
@@ -194,9 +347,6 @@ html, body {
   
 }
 
-.FF14_info .info_main {
-  background: #ece6cc;
-}
 
 .Higashino_info .info_main {
   background: #dcd5cd;
@@ -213,4 +363,3 @@ html, body {
 .contact {
   background:#a9cbd7
 }
-
