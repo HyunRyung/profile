@@ -6,11 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
   <script src="js/typing.js"></script>
   <script src="js/quick.js"></script>
+  <script src="js/scroll_event.js"></script>
   <link rel="stylesheet" href="css/total.css">
- 
+
   <title>Profile</title>
 
 </head>
@@ -20,52 +22,95 @@
 
   <div id="fullpage">
 
-    <div class='quick'><ul></ul></div>
+    <div class='quick'>
+      <ul></ul>
+    </div>
 
-    <div class="fullsection full1 title" pageNum="1"> <!-- Title -->
+    <div class="fullsection full1 title" pageNum="1">
+      <!-- Title -->
       <div class="title_text">This is My First Process For Developer.</div>
       <div class="title_blink"></div>
       <div class="mouse_img"></div>
     </div>
 
-    <div class="fullsection full2 BS_info" pageNum="2"> <!-- BS_info -->
+    <div class="fullsection full2 BS_info" pageNum="2">
+      <!-- BS_info -->
       <div class="info_main">
-        <div class="img_page"></div>
+        <div class="img_page">
+          <ul class="screen_img"></ul>
+          <div class="img_cover">
+            <div class="mag_icon"><img src="img/common/magnifier.png" alt="magnifier_icon"></div>
+          </div>
+        </div>
+        <div class="info_sub">Text for BS_info</div>
+      </div>
+    </div>
+
+    <div class="fullsection full3 FF14_info" pageNum="3">
+      <!-- FF14_info -->
+      <div class="info_main">
+        <div class="mobile_img">
+          <img src="img/common/phone.png" alt="phone_frame" class="phone_img">
+          <div class="M_img"><img src="img/FF14/moba_img.jpeg" alt="mobile_img"></div>
+        </div>
+        <div class="img_page"><a href="file:///C:/Users/LINE/Documents/GitHub/Final_Fantasy_14/index.html" target="blank">
+          <ul class="screen_img">
+            <li><img src="img/FF14/FF14_1.png" alt="FF14_img_1"></li>
+            <li><img src="img/FF14/FF14_2.png" alt="FF14_img_2"></li>
+            <li><img src="img/FF14/FF14_3.png" alt="FF14_img_3"></li>
+            <li><img src="img/FF14/FF14_4.png" alt="FF14_img_4"></li>
+          </ul>
+          <div class="img_cover">
+            <div class="mag_icon"><img src="img/common/magnifier.png" alt="magnifier_icon"></div>
+          </div>
+        </a></div>
+        <div class="info_sub">Text for FF14_info</div>
+      </div>
+    </div>
+
+    <div class="fullsection full4 Higashino_info" pageNum="4">
+      <!-- Higashino_info -->
+      <div class="info_main">
+        <div class="img_page">
+          <ul class="screen_img"></ul>
+          <div class="img_cover">
+            <div class="mag_icon"><img src="img/common/magnifier.png" alt="magnifier_icon"></div>
+          </div>
+        </div>
         <div class="info_sub"></div>
       </div>
     </div>
 
-    <div class="fullsection full3 FF14_info" pageNum="3"> <!-- FF14_info -->
+    <div class="fullsection full5 CHANEL_info" pageNum="5">
+      <!-- CHANEL_info -->
       <div class="info_main">
-        <div class="img_page"></div>
+        <div class="img_page">
+          <ul class="screen_img"></ul>
+          <div class="img_cover">
+            <div class="mag_icon"><img src="img/common/magnifier.png" alt="magnifier_icon"></div>
+          </div>
+        </div>
         <div class="info_sub"></div>
       </div>
     </div>
 
-    <div class="fullsection full4 Higashino_info" pageNum="4"> <!-- Higashino_info -->
+    <div class="fullsection full6 team_info" pageNum="6">
+      <!--team_info-->
       <div class="info_main">
-        <div class="img_page"></div>
+        <div class="img_page">
+          <ul class="screen_img"></ul>
+          <div class="img_cover">
+            <div class="mag_icon"><img src="img/common/magnifier.png" alt="magnifier_icon"></div>
+          </div>
+        </div>
         <div class="info_sub"></div>
       </div>
     </div>
-    
-    <div class="fullsection full5 CHANEL_info" pageNum="5"> <!-- CHANEL_info -->
-      <div class="info_main">
-        <div class="img_page"></div>
-        <div class="info_sub"></div>
-      </div>
-    </div> 
-    
-    <div class="fullsection full6 team_info" pageNum="6"> <!--team_info-->
-      <div class="info_main">
-        <div class="img_page"></div>
-        <div class="info_sub"></div>
-      </div>
-    </div> 
 
-    <div class="fullsection full7 contact" pageNum="7"> <!--contact-->
+    <div class="fullsection full7 contact" pageNum="7">
+      <!--contact-->
 
-    </div> 
+    </div>
 
   </div>
 
