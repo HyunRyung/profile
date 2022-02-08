@@ -109,12 +109,12 @@ html, body {
 }
 
 .M_img {
-  width: 260px;
-  height: 470px;
+  width: 255px;
+  height: 455px;
   overflow: hidden;
   position: absolute;
-  top: 7%;
-  left: 2.3%;
+  top: 10%;
+  left: 3%;
   border: 1px #eee solid;
   border-radius: 5px;
   z-index: 2;
