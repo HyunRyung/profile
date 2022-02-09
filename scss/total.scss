@@ -5,8 +5,17 @@
   src: url(../fonts/PowerPixel7-Jy0E.ttf);
   font-family: "dot";
 }
+@font-face {
+  src: url(../fonts/DOSGothic.ttf);
+  font-family: "dos";
+}
 
-*{font-family: "함초롬돋움";}
+
+*{
+  font-family: "함초롬돋움";
+  margin: 0;
+  padding: 0;
+}
 
 html, body {
   width: 100vw;
@@ -28,6 +37,107 @@ html, body {
   height: 100%;
   position:relative;
 };
+
+.contact {
+  width: 500px;
+  height: 200px;
+  position: absolute;
+  top: 70%;
+  left: 38%;
+  input {
+    display: block;
+    position: absolute;
+    top:-9999em;
+  }
+  button {
+    width: 60px;
+    height: 60px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .icon {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: space-around;
+    .tel {
+      padding-top: 10px;
+      img {
+        width: 60px;
+        height: 60px;
+      }
+    }
+    .kakao {
+      padding-top:15px;
+      img {
+        width: 55px;
+        height: 55px;
+      }
+    }
+    .mail {
+      padding-top: 15px;
+      img {
+        width: 55px;
+        height: 55px;
+      }
+    }
+    .discord {
+      padding-top: 10px;
+      img {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+  img {
+    width: 70px;
+    height: 70px;
+  }
+  p {
+    width: 100%;
+    height: 60%;
+    color: #fff;
+    text-align: center;
+    font : {
+      size: 2em;
+      family:"dot";
+    }
+  }
+
+}
+
+.back_text_blink {
+  display: inline-block; 
+  width: 1200px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #04B431;
+  line-height: 22px;
+  font : {
+    size: 20px;
+  }
+  font-family: "dos";
+}
+
+.back_text_blink span{
+  animation-name: cursor_bottom; 
+  animation-duration: 1s; 
+  animation-iteration-count: infinite;
+  color:#fff; 
+  font-weight: bold;
+}
+
+@keyframes cursor_bottom { 
+  0%{opacity: 0;}
+  50%{opacity: 1;}
+  100%{opacity: 0;}
+}
+
+
+
 
 .info_main {
   width: 100%;
@@ -102,6 +212,12 @@ html, body {
   width: 100%;
   height: 100%;
 }
+  .band {
+    width: 30px;
+    height: 90px;
+    position: absolute;
+    left: 12%;
+  }
 
 .info_sub {
   width: 450px;
@@ -111,18 +227,13 @@ html, body {
   position: absolute;
   top:0%;
   right:7%;
-  .band {
-    width: 30px;
-    height: 90px;
-    position: absolute;
-    left: 12%;
-  }
   .title_area{
     position: absolute;
     top:8%;
     left:12%;
   }
   h1 {
+    margin-top: 40px;
     font : { 
       size:40px;
     }
@@ -240,6 +351,9 @@ html, body {
 
 
 .Higashino_info {
+  .info_main {
+    background: #dcd5cd;
+  }
   .M_img {
     border: #888 solid 1px;
     }
@@ -267,6 +381,9 @@ html, body {
 }
 
 .CHANEL_info {
+  .info_main{
+    background: #444;
+  }
   .screen_img {
     height: 2730px;
     padding: 0;
@@ -290,6 +407,10 @@ html, body {
 }
 
 .team_info {
+  .info_main{
+    background:#eee;
+  }
+
   .screen_img {
     height: 2403px;
     padding: 0;
@@ -302,6 +423,41 @@ html, body {
       }
     }
   }
+  .info_sub {
+    h1 {
+      color:darkgoldenrod;
+    }
+    .band {
+      border-left: 5px solid darkgoldenrod;
+      }
+    .button_area {
+      top:33%;
+      width: 200px;
+      height: 100px;
+      .main_button {
+        background: darkgoldenrod;
+        &:hover {
+          border: 4px solid darkgoldenrod;
+          background: #fff;
+          a {
+            &:link {
+              color:darkgoldenrod;
+            }
+            &:visited {
+              color:darkgoldenrod;
+            }
+            &:active {
+              color:darkgoldenrod;
+            }
+          }
+        }
+      }
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+    }
+    }
 }
 
 
@@ -310,6 +466,10 @@ html, body {
   justify-content: center;
   align-items: center;
   background: #000;
+}
+
+.title_back_text {
+  display: none;
 }
 
 .title_text{
@@ -347,19 +507,3 @@ html, body {
   
 }
 
-
-.Higashino_info .info_main {
-  background: #dcd5cd;
-}
-
-.CHANEL_info .info_main {
-  background: #444;
-}
-
-.team_info .info_main {
-  background:#eee;
-}
-
-.contact {
-  background:#a9cbd7
-}

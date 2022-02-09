@@ -10,7 +10,8 @@ ul, li{list-style: none;}
   z-index:100000;
 
   .on{
-    background: skyblue;
+    background: #000;
+    border: 2px solid #fff;
     };
   li{
      width: 10px;
@@ -19,6 +20,6 @@ ul, li{list-style: none;}
      border: 2px solid #000;
      border-radius: 15px;
      cursor:pointer;
-     background: #ddd;
+     background: #fff;
      };
    } ;

@@ -14,7 +14,8 @@ ul, li {
 }
 
 .quick .on {
-  background: skyblue;
+  background: #000;
+  border: 2px solid #fff;
 }
 
 .quick li {
@@ -24,7 +25,7 @@ ul, li {
   border: 2px solid #000;
   border-radius: 15px;
   cursor: pointer;
-  background: #ddd;
+  background: #fff;
 }
 
 @font-face {
@@ -32,8 +33,15 @@ ul, li {
   font-family: "dot";
 }
 
+@font-face {
+  src: url(../fonts/DOSGothic.ttf);
+  font-family: "dos";
+}
+
 * {
   font-family: "함초롬돋움";
+  margin: 0;
+  padding: 0;
 }
 
 html, body {
@@ -54,6 +62,136 @@ html, body {
   width: 100%;
   height: 100%;
   position: relative;
+}
+
+.contact {
+  width: 500px;
+  height: 200px;
+  position: absolute;
+  top: 70%;
+  left: 38%;
+}
+
+.contact input {
+  display: block;
+  position: absolute;
+  top: -9999em;
+}
+
+.contact button {
+  width: 60px;
+  height: 60px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.contact .icon {
+  width: 100%;
+  height: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contact .icon .tel {
+  padding-top: 10px;
+}
+
+.contact .icon .tel img {
+  width: 60px;
+  height: 60px;
+}
+
+.contact .icon .kakao {
+  padding-top: 15px;
+}
+
+.contact .icon .kakao img {
+  width: 55px;
+  height: 55px;
+}
+
+.contact .icon .mail {
+  padding-top: 15px;
+}
+
+.contact .icon .mail img {
+  width: 55px;
+  height: 55px;
+}
+
+.contact .icon .discord {
+  padding-top: 10px;
+}
+
+.contact .icon .discord img {
+  width: 60px;
+  height: 60px;
+}
+
+.contact img {
+  width: 70px;
+  height: 70px;
+}
+
+.contact p {
+  width: 100%;
+  height: 60%;
+  color: #fff;
+  text-align: center;
+  font-size: 2em;
+  font-family: "dot";
+}
+
+.back_text_blink {
+  display: inline-block;
+  width: 1200px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #04B431;
+  line-height: 22px;
+  font-size: 20px;
+  font-family: "dos";
+}
+
+.back_text_blink span {
+  -webkit-animation-name: cursor_bottom;
+          animation-name: cursor_bottom;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  color: #fff;
+  font-weight: bold;
+}
+
+@-webkit-keyframes cursor_bottom {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes cursor_bottom {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .info_main {
@@ -134,6 +272,13 @@ html, body {
   height: 100%;
 }
 
+.band {
+  width: 30px;
+  height: 90px;
+  position: absolute;
+  left: 12%;
+}
+
 .info_sub {
   width: 450px;
   height: 90%;
@@ -144,13 +289,6 @@ html, body {
   right: 7%;
 }
 
-.info_sub .band {
-  width: 30px;
-  height: 90px;
-  position: absolute;
-  left: 12%;
-}
-
 .info_sub .title_area {
   position: absolute;
   top: 8%;
@@ -158,6 +296,7 @@ html, body {
 }
 
 .info_sub h1 {
+  margin-top: 40px;
   font-size: 40px;
 }
 
@@ -275,6 +414,10 @@ html, body {
   border-left: 5px solid #367df3;
 }
 
+.Higashino_info .info_main {
+  background: #dcd5cd;
+}
+
 .Higashino_info .M_img {
   border: #888 solid 1px;
 }
@@ -302,6 +445,10 @@ html, body {
   border-left: 5px solid #aaa;
 }
 
+.CHANEL_info .info_main {
+  background: #444;
+}
+
 .CHANEL_info .screen_img {
   height: 2730px;
   padding: 0;
@@ -325,6 +472,10 @@ html, body {
   border-left: 5px solid maroon;
 }
 
+.team_info .info_main {
+  background: #eee;
+}
+
 .team_info .screen_img {
   height: 2403px;
   padding: 0;
@@ -340,6 +491,51 @@ html, body {
   height: 100%;
 }
 
+.team_info .info_sub h1 {
+  color: darkgoldenrod;
+}
+
+.team_info .info_sub .band {
+  border-left: 5px solid darkgoldenrod;
+}
+
+.team_info .info_sub .button_area {
+  top: 33%;
+  width: 200px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.team_info .info_sub .button_area .main_button {
+  background: darkgoldenrod;
+}
+
+.team_info .info_sub .button_area .main_button:hover {
+  border: 4px solid darkgoldenrod;
+  background: #fff;
+}
+
+.team_info .info_sub .button_area .main_button:hover a:link {
+  color: darkgoldenrod;
+}
+
+.team_info .info_sub .button_area .main_button:hover a:visited {
+  color: darkgoldenrod;
+}
+
+.team_info .info_sub .button_area .main_button:hover a:active {
+  color: darkgoldenrod;
+}
+
 .title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -351,6 +547,10 @@ html, body {
       -ms-flex-align: center;
           align-items: center;
   background: #000;
+}
+
+.title_back_text {
+  display: none;
 }
 
 .title_text {
@@ -402,20 +602,4 @@ html, body {
 
 .BS_info .info_main {
   background: #e8dcca;
-}
-
-.Higashino_info .info_main {
-  background: #dcd5cd;
-}
-
-.CHANEL_info .info_main {
-  background: #444;
-}
-
-.team_info .info_main {
-  background: #eee;
-}
-
-.contact {
-  background: #a9cbd7;
 }
