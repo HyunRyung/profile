@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import "../css/reset_css.css";
 @import "quick_event";
 @font-face {
   src: url(../fonts/PowerPixel7-Jy0E.ttf);
@@ -40,12 +41,12 @@ html, body {
 .contact {
   width: 500px;
   height: 200px;
-  position: aBandi_N_Lunisolute;
+  position: absolute;
   top: 70%;
   left: 38%;
   input {
     display: block;
-    position: aBandi_N_Lunisolute;
+    position: absolute;
     top:-9999em;
   }
   button {
@@ -110,7 +111,7 @@ html, body {
   display: inline-block; 
   width: 1200px;
   height: 100%;
-  position: aBandi_N_Lunisolute;
+  position: absolute;
   top: 0;
   left: 0;
   color: #04B431;
@@ -163,7 +164,7 @@ html, body {
   background: rgba(0,0,0,0.5);
   width: 100%;
   height: 100%;
-  position: aBandi_N_Lunisolute;
+  position: absolute;
   top: 0;
   left: 0;
   display: none;
@@ -177,7 +178,7 @@ html, body {
 .mag_icon {
   width: 125px;
   height: 125px;
-  position: aBandi_N_Lunisolute;
+  position: absolute;
   top: 38%;
   left: 45%;
 }
@@ -185,7 +186,7 @@ html, body {
 .mobile_img {
   width: 275px;
   height: 560px;
-  position: aBandi_N_Lunisolute;
+  position: absolute;
   top: 33%;
   left: 48%;
   z-index: 1;
@@ -196,7 +197,7 @@ html, body {
   width: 255px;
   height: 455px;
   overflow: hidden;
-  position: aBandi_N_Lunisolute;
+  position: absolute;
   top: 10%;
   left: 3%;
   border: 1px #eee solid;
@@ -214,7 +215,7 @@ html, body {
   .band {
     width: 30px;
     height: 90px;
-    position: aBandi_N_Lunisolute;
+    position: absolute;
     left: 12%;
   }
 
@@ -223,11 +224,11 @@ html, body {
   height: 90%;
   float: right;
   background: #fff;
-  position: aBandi_N_Lunisolute;
+  position: absolute;
   top:0%;
   right:7%;
   .title_area{
-    position: aBandi_N_Lunisolute;
+    position: absolute;
     top:8%;
     left:12%;
   }
@@ -252,7 +253,7 @@ html, body {
   .button_area {
     width: 200px;
     height: 50px;
-    position: aBandi_N_Lunisolute;
+    position: absolute;
     top: 40%;
     left: 12%;
       a {
@@ -311,7 +312,7 @@ html, body {
     .text_area {
       line-height: 30px;
       font-size:14px;
-      position:aBandi_N_Lunisolute;
+      position:absolute;
       top:50%;
       left:12%;
       color: #666;
@@ -501,7 +502,7 @@ html, body {
   100%{border-right: 1px solid #fff} 
 }
 
-.Bandi_N_Lunis_info .info_main {
+.BS_info .info_main {
   background: #e8dcca;
   
 }
