@@ -348,6 +348,7 @@ html, body {
   font-weight: bold;
   margin-left: 5px;
   margin-right: 5px;
+  line-height: 18px;
 }
 
 .info_sub .button_area .main_button:hover, .info_sub .button_area .sub_button:hover {
